@@ -116,7 +116,7 @@ class PlgSystemLanguageDomains extends plgSystemLanguageFilter
 		$this->app->setDetectBrowser(false);
 
 		// Detect the language
-		$languageTag = JFactory::getLanguage()->getTag();
+		$languageTag = JLanguageHelper::detectLanguage();
 
 		// Detect the language again
 		if (empty($languageTag))
